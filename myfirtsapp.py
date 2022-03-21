@@ -74,9 +74,9 @@ st.write(weatherData['main']['temp_max'])
 
 import streamlit as st
 city = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
-if city == 'Bolzano':
+if city == 'Rome':
     st.write('You selected Rome')
-    st.write(weatherData['Bolzano'])
+    st.write(weatherData['Rome'])
 if city == 'Verona':
     st.write("You selected Verona")
     st.write(weatherData['Verona'])
