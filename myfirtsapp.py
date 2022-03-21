@@ -41,7 +41,7 @@ location = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
 if location == 'Rome':
     st.write('You selected Rome')
     st.write(weatherData)
-if location == 'Verona':
+elif location == 'Verona':
     st.write("You selected Verona")
     st.write(weatherData)
 else:
