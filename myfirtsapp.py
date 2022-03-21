@@ -14,7 +14,7 @@ st.write('The current movie title is', title)
 
 # add your own APIkey
 APIkey = "914e56ce07698c06f712a3cad0747080"
-location = st.text_input("Give me the name of a city")
+location = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
 
 # check API documentation to see what structure of URL is needed to access the data
 # http://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -37,7 +37,7 @@ st.write(weatherData)
 
 #st.write(weatherData['main']['temp_max']) 
 
-location = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
+
 if location == 'Rome':
     st.write('You selected Rome')
     st.write(weatherData)
