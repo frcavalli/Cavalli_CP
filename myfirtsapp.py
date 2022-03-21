@@ -76,10 +76,10 @@ import streamlit as st
 city = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
 if city == 'Rome':
     st.write('You selected Rome')
-    st.write(weatherData['Rome'])
+    st.write(weatherData)
 if city == 'Verona':
     st.write("You selected Verona")
-    st.write(weatherData['Verona'])
+    st.write(weatherData)
 else:
     st.write("You selected Miland")
-    st.write(weatherData['Miland'])
+    st.write(weatherData)
