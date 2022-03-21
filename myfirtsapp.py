@@ -35,7 +35,7 @@ st.write(weatherData)
 # from pprint import pprint 
 # pprint(weatherData) 
 
-st.write(weatherData['main']['temp_max']) 
+#st.write(weatherData['main']['temp_max']) 
 
 location = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
 if location == 'Rome':
