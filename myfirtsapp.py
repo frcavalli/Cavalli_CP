@@ -40,7 +40,7 @@ weatherData = json.loads(response.text)
 
 st.write(weatherData['main']['temp_max']) 
 
------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
 
  # ! python3
 import json, requests 
