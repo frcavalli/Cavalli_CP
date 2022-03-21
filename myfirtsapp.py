@@ -82,4 +82,4 @@ if city == 'Verona':
     st.write(weatherData['Verona'])
 else:
     st.write("You selected Miland, in Lombardia.")
-    st.write(weatherData['Miland])
+    st.write(weatherData['Miland'])
