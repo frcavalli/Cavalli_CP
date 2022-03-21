@@ -77,7 +77,7 @@ city = st.radio("Give me a city name",('Bolzano', 'Verona', 'Miland'))
 if city == 'Bolzano':
     st.write('You selected Bolzano, in Southtirol.')
     st.write(weatherData['Bolzano'])
-if city == 'Verona'
+if city == 'Verona':
     st.write("You selected Verona, in Veneto.")
     st.write(weatherData['Verona'])
 else:
