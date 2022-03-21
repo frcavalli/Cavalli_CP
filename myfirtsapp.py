@@ -1,5 +1,6 @@
 # Cavalli_CP
-import streamlit as st
+import streamlit as st 
+import json, requests
 st.header("hello world") 
 title = st.text_input('Gimme a movie title', 'lorem ipsum')
 st.write('The current movie title is', title)
@@ -12,7 +13,7 @@ else:
     st.write("You didn't select comedy.")
 
   # ! python3
-import json, requests 
+
 
 # add your own APIkey
 APIkey = "914e56ce07698c06f712a3cad0747080"
@@ -43,7 +44,7 @@ weatherData = json.loads(response.text)
 #-----------------------------------------------------------------------------
 
  # ! python3
-import json, requests 
+
 
 # add your own APIkey
 APIkey = "914e56ce07698c06f712a3cad0747080"
@@ -72,7 +73,7 @@ st.write(weatherData)
 
 #------------------------------------------------------------
  # ! python3
-import json, requests 
+ 
 
 # add your own APIkey
 APIkey = "914e56ce07698c06f712a3cad0747080"
@@ -98,7 +99,7 @@ st.write(weatherData)
 # pprint(weatherData) 
 
 st.write(weatherData['main']['temp_max']) 
-import streamlit as st
+
 location = st.radio("Give me a city name",('Rome', 'Verona', 'Miland'))
 if location == 'Rome':
     st.write('You selected Rome')
