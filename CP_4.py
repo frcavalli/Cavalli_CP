@@ -8,5 +8,5 @@ st.write('Your word is', title)
 
 url= 'https://api.datamuse.com/words?rel_rhy=' + title + '&max=5'
 
-option = st.selectbox('Which option do you want to select?', ('Synonyms', 'Antonyms', 'Sounds like' 'Means like')) 
+option = st.selectbox('Which option do you want to select?', ('Synonyms', 'Antonyms', 'Sounds like', 'Means like')) 
 st.write('You selected:', option)
