@@ -1,6 +1,11 @@
-import streamlit in st 
-import json,request
-from pprint import pprint 
+import streamlit as st 
+import json, requests
+st.header("Your choice") 
+title = st.text_input('Gimme a word', 'lorem ipsum')
+st.write('your word is', title)
+
+
+
 
 keyword= input('enter a word ')
 url= 'https://api.datamuse.com/words?rel_rhy=' + keyword
