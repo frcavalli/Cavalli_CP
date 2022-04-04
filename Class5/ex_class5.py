@@ -5,10 +5,10 @@ translator=Translator()
 
 st.header("Translator") 
 word = st.text_input('Write here your word or phrase', ' ')
-st.write('Your word is', word)
+
 
 if word != ' ':
-  
+  st.write('Your word is', word)
   if word != 'nothing':
     lang= st.text_input('Give me a target language ', 'en')
     trans_it= translator.translate(word, dest= lang)
