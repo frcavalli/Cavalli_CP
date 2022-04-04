@@ -2,6 +2,11 @@ from googletrans import Translator
 
 translator=Translator()
 
+st.header("Translator") 
+title = st.text_input('Write here your word', 'lorem ipsum')
+st.write('Your word is', title)
+
+
 while True:
   word= input('Give me a word or a phrase ')
   
