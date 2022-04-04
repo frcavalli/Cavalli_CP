@@ -8,9 +8,9 @@ word = st.text_input('Write here your word or phrase', ' ')
 
 
 if word != ' ':
-  st.write('Your word/phrase is', word)
+  st.write('Your word/phrase is: ', word)
   if word != 'nothing':
-    lang= st.text_input('Give me a target language: ', 'en')
+    lang= st.text_input('Give me a target language ', 'en')
     trans_it= translator.translate(word, dest= lang)
     st.write('the translation of this word in', trans_it.dest, 'is: ', trans_it.text)
   else:
