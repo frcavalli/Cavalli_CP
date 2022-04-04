@@ -4,7 +4,7 @@ from googletrans import Translator
 translator=Translator()
 
 st.header("Translator") 
-word = st.text_input('Write here your word or phrase', 'lorem ipsum')
+word = st.text_input('Write here your word or phrase', ' ')
 st.write('Your word is', word)
   
 if word != 'nothing':
