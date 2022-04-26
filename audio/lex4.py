@@ -7,7 +7,7 @@ translator=Translator()
 
 st.header("Translator")
 
-text= st.input('Write here the text you want to translate: ', ' ')
+text= st.text_input('Write here the text you want to translate: ', ' ')
 
 if text != ' ':
   st.write('Your text is: ', text)
