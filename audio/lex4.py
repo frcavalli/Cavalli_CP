@@ -12,7 +12,7 @@ text= st.text_input('Write here the text you want to translate: ')
 if text != '':
   st.write('Your text is: ', text)
   if text != '':
-    lang= st.text_input('Give me a 2-letter target language ')
+    lang= st.text_input('Give me a 2-letter target language: ')
     trans_text= translator.translate(text, dest= lang)
     st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
     
