@@ -5,7 +5,7 @@ from googletrans import Translator
 
 translator=Translator()
 
-st.header("Translator")
+st.header("Translator and Audio-file")
 
 text= st.text_input('Write here the text you want to translate: ', ' ')
 
@@ -21,7 +21,7 @@ if text != ' ':
     my_audio= open("audiofile.mp3", "rb")
     st.write('Your Audio:')
     
-    st.audio(data=audio_file, format="audio/mp3", start_time=0)
+    st.audio(data=my_audio, format="audio/mp3", start_time=0)
     
     #st.audio(ipd.display(ipd.Audio('audiofile.mp3')))
     
