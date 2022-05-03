@@ -8,11 +8,25 @@ translator=Translator()
 st.header("Translator and Audio-file")
 
 text= st.text_input('Write here the text you want to translate: ')
-
+code= ''
 if text != '':
   st.write('Your text is: ', text)
   if text != '':
-    lang = st.selectbox('Give me a 2-letter target language: ', ('it', 'en', 'es', 'de', 'hr', 'fr', 'ru',))
+    lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish', 'german', 'croatian', 'french', 'russian',))
+    if lang == 'italien':
+      code= 'it'
+    elif lang == 'spanish':
+      code= 'es'
+    elif lang == 'german':
+      code= 'de'
+    elif lanh == 'croatian':
+      code= 'hr'
+    elife lang== 'french':
+      code= 'fr'
+    elif lang== 'russian':
+      code= 'ru'
+    else:
+      pass
     trans_text= translator.translate(text, dest= lang)
     st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
     
