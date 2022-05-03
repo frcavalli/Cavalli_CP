@@ -21,7 +21,7 @@ if text != '':
       code= 'de'
     elif lanh == 'croatian':
       code= 'hr'
-    elife lang== 'french':
+    elif lang== 'french':
       code= 'fr'
     elif lang== 'russian':
       code= 'ru'
