@@ -25,12 +25,11 @@ if text != '':
       code= 'fr'
     elif lang== 'russian':
       code= 'ru'
-    else:
-      pass
-    trans_text= translator.translate(text, dest= lang)
+   
+    trans_text= translator.translate(text, dest= code)
     st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
     
-    tts1=gTTS(trans_text.text, lang)
+    tts1=gTTS(trans_text.text, code)
     tts1.save("audiofile.mp3")
     my_audio= open("audiofile.mp3", "rb")
     st.write('Your Audio:')
