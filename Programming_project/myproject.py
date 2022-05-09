@@ -10,8 +10,7 @@ st.header("My Project")
 
 #uploadfile and Speech recognition
 r = sr.Recognizer()
-AUDIO_FILE = "sample_audio_short.wav"   #mp3 files are not supported
-
+AUDIO_FILE = "OSR_us_000_0011_8k.wav"   
 with sr.AudioFile(AUDIO_FILE) as source:
     audio = r.record(source)  
 
