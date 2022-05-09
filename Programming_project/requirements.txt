@@ -3,4 +3,4 @@ googletrans==3.1.0a0
 click<=8.0.4
 SpeechRecognition
 bokeh
-stremlit_bokeh
+stremlit_bokeh_events
