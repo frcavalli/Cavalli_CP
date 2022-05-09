@@ -25,7 +25,7 @@ if audio_file is not None:
     st.write(dataframe)
     
     
-with sr.audiofile(audio_file) as source:
+with sr.audiofile(dataframe) as source:
     audio = r.record(source)  
 
 recognised_text= r.recognize_google(audio)
