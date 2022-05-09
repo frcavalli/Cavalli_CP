@@ -20,7 +20,10 @@ if audio_file is not None:
 
     recognised_text= r.recognize_google(audio)
 
-    st.write('the text recognized from the audio seems to be: ')
+    st.write('The text recognized from the audio seems to be: ')
     st.write( recognised_text)
+
+    
+#Check-spelling 
 
 
