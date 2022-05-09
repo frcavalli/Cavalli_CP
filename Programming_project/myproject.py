@@ -17,5 +17,5 @@ with sr.AudioFile(AUDIO_FILE) as source:
 
 recognised_text= r.recognize_google(audio)
 
-print('the text recognized from the audio seems to be: ')
-print( recognised_text)
+st.write('the text recognized from the audio seems to be: ')
+st.write( recognised_text)
