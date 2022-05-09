@@ -15,7 +15,7 @@ if audio_file is not None:
     st.audio(audio_file, format="audio/wav")
     
     #Speech recognition
-    with sr.audiofile(audio_file) as source:
+    with sr.AudioFile(audio_file) as source:
         audio = r.record(source)  
 
     recognised_text= r.recognize_google(audio)
