@@ -16,14 +16,13 @@ if audio_file is not None:
     st.write(coll_data)
     
     stringio=StringIO(audio_file.getvalue().decode("utf-8"))
-     st.write(stringio)
+    st.write(stringio)
      
     new_string = stringio.read()
-     st.write(new_string)
-
-     # Can be used wherever a "file-like" object is accepted:
-     dataframe = pd.read_csv(audio_file)
-     st.write(dataframe)
+    st.write(new_string)
+    
+    dataframe = pd.read_csv(audio_file)
+    st.write(dataframe)
     
     
 with sr.AudioFile(audio_file) as source:
