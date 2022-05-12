@@ -37,7 +37,7 @@ else:
   st.write('you did not write any word/sentence')
 
 
- lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish', 'german', 'croatian', 'french', 'russian',))
+ lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish', 'german', 'croatian', 'french'))
     if lang == 'italien':
       code= 'it'
     elif lang == 'spanish':
@@ -48,10 +48,8 @@ else:
       code= 'hr'
     elif lang== 'french':
       code= 'fr'
-    elif lang== 'russian':
-      code= 'ru'
    
-    trans_text= translator.translate(text, dest= code)
+    trans_text= translator.translate(recognised_text, dest= code)
     st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
     
     tts1=gTTS(trans_text.text, code)
@@ -60,8 +58,6 @@ else:
     st.write('Your Audio:')
     
     st.audio(data=my_audio, format="audio/mp3", start_time=0)
-    
-    #st.audio(ipd.display(ipd.Audio('audiofile.mp3')))
     
   else:
     st.write('you did not write any word')
