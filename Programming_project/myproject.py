@@ -29,9 +29,39 @@ if audio_file is not None:
 
 #Translator
    
-if recognised_text != 'nothing':
+if recognised_text != '':
   lang= input('Give me a target language ')
   trans_it= translator.translate(recognised_text, dest= lang)
   st.write('the translation of this word/sentence in', trans_it.dest, 'is', trans_it.text)
 else:
   st.write('you did not write any word/sentence')
+
+
+ lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish', 'german', 'croatian', 'french', 'russian',))
+    if lang == 'italien':
+      code= 'it'
+    elif lang == 'spanish':
+      code= 'es'
+    elif lang == 'german':
+      code= 'de'
+    elif lang == 'croatian':
+      code= 'hr'
+    elif lang== 'french':
+      code= 'fr'
+    elif lang== 'russian':
+      code= 'ru'
+   
+    trans_text= translator.translate(text, dest= code)
+    st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
+    
+    tts1=gTTS(trans_text.text, code)
+    tts1.save("audiofile.mp3")
+    my_audio= open("audiofile.mp3", "rb")
+    st.write('Your Audio:')
+    
+    st.audio(data=my_audio, format="audio/mp3", start_time=0)
+    
+    #st.audio(ipd.display(ipd.Audio('audiofile.mp3')))
+    
+  else:
+    st.write('you did not write any word')
