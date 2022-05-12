@@ -38,15 +38,15 @@ else:
 
 
 lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish', 'german', 'croatian', 'french'))
-    if lang == 'italien':
+   if lang == 'italien':
       code= 'it'
-    elif lang == 'spanish':
+   elif lang == 'spanish':
       code= 'es'
-    elif lang == 'german':
+   elif lang == 'german':
       code= 'de'
-    elif lang == 'croatian':
+   elif lang == 'croatian':
       code= 'hr'
-    elif lang== 'french':
+   elif lang== 'french':
       code= 'fr'
    
       trans_text= translator.translate(recognised_text, dest= code)
@@ -59,5 +59,5 @@ lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish'
     
       st.audio(data=my_audio, format="audio/mp3", start_time=0)
     
-    else:
+   else:
       st.write('you did not write any word')
