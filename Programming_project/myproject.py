@@ -29,7 +29,7 @@ if audio_file is not None:
 
 #Translator
    
-if recognised_text != '':
+if recognised_text != 'Nothing':
   lang= input('Give me a target language ')
   trans_it= translator.translate(recognised_text, dest= lang)
   st.write('the translation of this word/sentence in', trans_it.dest, 'is', trans_it.text)
