@@ -27,3 +27,11 @@ if audio_file is not None:
 #Check-spelling 
 
 
+#Translator
+   
+if recognised_text != 'nothing':
+  lang= input('Give me a target language ')
+  trans_it= translator.translate(recognised_text, dest= lang)
+  st.write('the translation of this word/sentence in', trans_it.dest, 'is', trans_it.text)
+else:
+  st.write('you did not write any word/sentence')
