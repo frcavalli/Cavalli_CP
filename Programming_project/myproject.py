@@ -17,13 +17,13 @@ if file is not None:
     if audio_file is not None: 
         st.audio(audio_file, format="audio/wav")
         
-        #Speech recognition
-        with sr.AudioFile(audio_file) as source:
-        audio = r.record(source)  
+     #Speech recognition
+     with sr.AudioFile(audio_file) as source:
+     audio = r.record(source)  
         
-        recognised_text= r.recognize_google(audio)
-        st.write('The text recognized from the audio seems to be: ')
-        st.write( recognised_text)
+     recognised_text= r.recognize_google(audio)
+     st.write('The text recognized from the audio seems to be: ')
+     st.write( recognised_text)
 
     
     #Check-spelling 
