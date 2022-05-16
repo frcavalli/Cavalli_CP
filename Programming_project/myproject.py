@@ -6,6 +6,13 @@ translator=Translator()
 import speech_recognition as sr
 #import language_tool
 
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
 #title
 st.header("Upload or record your audio file and I will translate it for you")
 
