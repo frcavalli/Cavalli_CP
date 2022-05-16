@@ -6,7 +6,7 @@ translator=Translator()
 import speech_recognition as sr
 
 #title
-st.header("Upload your audio file and I will translate it for you")
+st.header("Upload or record your audio file and I will translate it for you")
 
 #uploadfile 
 r = sr.Recognizer()
