@@ -32,7 +32,7 @@ if audio_file is not None:
 
 #Translator
 
-lang = st.selectbox('Choose a 2-letter target language: ', ('Italien', 'Spanish', 'German', 'Croatian', 'French'))
+lang = st.selectbox('Choose a language: ', ('Italien', 'Spanish', 'German', 'Croatian', 'French'))
 if lang == 'Italien':
    code= 'it'
 elif lang == 'Spanish':
