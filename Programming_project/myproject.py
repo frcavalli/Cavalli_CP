@@ -4,6 +4,7 @@ import IPython.display as ipd
 from googletrans import Translator 
 translator=Translator()
 import speech_recognition as sr
+import language_tool
 
 #title
 st.header("Upload or record your audio file and I will translate it for you")
@@ -25,39 +26,34 @@ if audio_file is not None:
 
     
 #Check-spelling 
-
+#lang_tool = language_tool.LanguageTool("en-US")
+#matches = lang_tool.check(recognised_text)
+#len(matches)
 
 #Translator
-   
-  if recognised_text != 'Nothing':
-    lang= input('Give me a target language ')
-    trans_it= translator.translate(recognised_text, dest= lang)
-    st.write('the translation of this word/sentence in', trans_it.dest, 'is', trans_it.text)
-  else:
-    st.write('you did not write any word/sentence')
 
-
-lang = st.selectbox('Choose a 2-letter target language: ', ('italien', 'spanish', 'german', 'croatian', 'french'))
-if lang == 'italien':
+lang = st.selectbox('Choose a 2-letter target language: ', ('Italien', 'Spanish', 'German', 'Croatian', 'French'))
+if lang == 'Italien':
    code= 'it'
-elif lang == 'spanish':
+elif lang == 'Spanish':
    code= 'es'
-elif lang == 'german':
+elif lang == 'German':
    code= 'de'
-elif lang == 'croatian':
+elif lang == 'Croatian':
    code= 'hr'
-elif lang== 'french':
+elif lang== 'French':
    code= 'fr'
    
-   trans_text= translator.translate(recognised_text, dest= code)
-   st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
-    
-   tts1=gTTS(trans_text.text, code)
-   tts1.save("audiofile.mp3")
-   my_audio= open("audiofile.mp3", "rb")
-   st.write('Your Audio:')
-    
-   st.audio(data=my_audio, format="audio/mp3", start_time=0)
  
 else:
    st.write('you did not write any word')
+
+trans_text= translator.translate(recognised_text, dest= code)
+st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
+    
+tts1=gTTS(trans_text.text, code)
+tts1.save("audiofile.mp3")
+my_audio= open("audiofile.mp3", "rb")
+st.write('Your Audio:')
+    
+st.audio(data=my_audio, format="audio/mp3", start_time=0)
