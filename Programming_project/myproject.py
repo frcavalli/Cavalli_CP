@@ -54,6 +54,6 @@ st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.
 tts1=gTTS(trans_text.text, code)
 tts1.save("audiofile.mp3")
 my_audio= open("audiofile.mp3", "rb")
-st.write('Your Audio:')
+st.write('Here is the audio of your translated text:')
     
 st.audio(data=my_audio, format="audio/mp3", start_time=0)
