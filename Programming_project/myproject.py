@@ -27,8 +27,9 @@ if audio_file is not None:
 
     
 #Check-spelling 
-#lang_tool = language_tool.LanguageTool("en-US")
+#lang_tool = language_tool.LanguageTool("lang")
 #matches = lang_tool.check(recognised_text)
+#st.write(f'I found an error in your text that you might want to correct: ', {len(matches)})
 #len(matches)
 
 #Translator
