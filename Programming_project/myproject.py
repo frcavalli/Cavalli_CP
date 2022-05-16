@@ -4,7 +4,7 @@ import IPython.display as ipd
 from googletrans import Translator 
 translator=Translator()
 import speech_recognition as sr
-import language_tool
+#import language_tool
 
 #title
 st.header("Upload or record your audio file and I will translate it for you")
