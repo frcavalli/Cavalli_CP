@@ -52,8 +52,8 @@ if audio_file is not None:
          trans_text= translator.translate(recognised_text, dest= code)
          st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
         
-    tts1=gTTS(trans_text.text, code)
-    tts1.save("audiofile.mp3")
+    ttmp3=gTTS(trans_text.text, lang=code, tld='com')
+    ttmp3.save("audiofile.mp3")
     my_audio= open("audiofile.mp3", "rb")
     st.write('Here is the audio of your translated text:')
 
