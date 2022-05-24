@@ -4,7 +4,10 @@ import IPython.display as ipd
 from googletrans import Translator 
 translator=Translator()
 import speech_recognition as sr
-#import language_tool
+
+from PIL import Image
+image = Image.open('https://tse3.mm.bing.net/th?id=OIP.XpqgQ70FbQ37h4IWyZ6AIwHaEY&pid=Api&P=0&w=317&h=188')
+st.image(image, caption='Translation immagine')
 
 
 #title
