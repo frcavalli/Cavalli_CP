@@ -10,8 +10,9 @@ st.image(urlfoto)
 
 
 #title
-st.header("Upload or record your audio file and I will translate it for you")
-
+st.header("Upload your audio file and this app will translate it for you")
+st.write('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you.')
+    
 #uploadfile 
 r = sr.Recognizer()
 audio_file = st.file_uploader("Upload your audio file here")
