@@ -11,7 +11,7 @@ st.image(urlfoto)
 
 #title
 st.header("Audio file translator")
-st.write('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you. The application is designed for students trying to translate audio files into another language for study purposes, but can also be useful for tourists and people with other purposes.')
+st.write('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you. The application is designed for European students trying to translate audio files into another language for study purposes, but can also be useful for tourists and people with other purposes.')
     
 #uploadfile 
 r = sr.Recognizer()
@@ -36,7 +36,7 @@ if audio_file is not None:
 
         #Translator
 
-         lang = st.selectbox('Choose a language: ', ('Italien', 'Spanish', 'German', 'Croatian', 'French', 'English'))
+         lang = st.selectbox('Choose the language in which you want to translate your text in the box below: ', ('Italien', 'Spanish', 'German', 'Croatian', 'French', 'English'))
          if lang == 'Italien':
             code= 'it'
          elif lang == 'Spanish':
