@@ -26,13 +26,13 @@ if audio_file is not None:
          recognised_text= r.recognize_google(audio)
          st.write('The text recognized from the audio seems to be: ')
          st.write( recognised_text)
-
-        
-        #Check-spelling 
-        #lang_tool = language_tool.LanguageTool("lang")
-        #matches = lang_tool.check(recognised_text)
-        #st.write(f'I found an error in your text that you might want to correct: ', {len(matches)})
-        #len(matches)
+         
+        #Check-spelling
+         from textblob import TextBlob
+         new_doc = TextBlob(recognised_text)
+         st.write('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
+         result = str(new_doc.correct())
+         st.write(result)
 
         #Translator
 
@@ -54,8 +54,8 @@ if audio_file is not None:
          else:
             st.write('you did not write any word')
 
-         trans_text= translator.translate(recognised_text, dest= code)
-         st.write('the translation of this text in', trans_text.dest, 'is: ', trans_text.text)
+         trans_text= translator.translate(result, dest= code)
+         st.write('The translation of this text in ', trans_text.dest, 'is: ', trans_text.text)
         
     ttmp3=gTTS(trans_text.text, lang=code, tld='com')
     ttmp3.save("audiofile.mp3")
@@ -63,4 +63,3 @@ if audio_file is not None:
     st.write('Here is the audio of your translated text:')
 
     st.audio(data=my_audio, format="audio/mp3", start_time=0)
-
