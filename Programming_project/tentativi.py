@@ -26,13 +26,12 @@ if audio_file is not None:
          recognised_text= r.recognize_google(audio)
          st.write('The text recognized from the audio seems to be: ')
          st.write( recognised_text)
-
-        
-        #Check-spelling 
-        import TextBlob
-        new_doc = TextBlob(recognised_text)
-        result = str(new_doc.correct())
-        st.write(result)
+         
+        #Check-spelling
+         import TextBlob
+         new_doc = TextBlob(recognised_text)
+         result = str(new_doc.correct())
+         st.write(result)
 
         #Translator
 
