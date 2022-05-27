@@ -5,7 +5,7 @@ from googletrans import Translator
 translator=Translator()
 import speech_recognition as sr
 
-urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/prog_py.jpg"
+urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/prog_py.png"
 st.image(urlfoto)
 
 
