@@ -28,7 +28,7 @@ if audio_file is not None:
          st.write( recognised_text)
          
         #Check-spelling
-         import TextBlob
+         from textblob import TextBlob
          new_doc = TextBlob(recognised_text)
          result = str(new_doc.correct())
          st.write(result)
