@@ -10,7 +10,7 @@ import speech_recognition as sr
 st.header("Audio file translator")
 
 from PIL import Image 
-image= Image.open("path/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg")
+image= Image.open("https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg")
 image= image.resize((500,250).Image.ANTIALIAS)
 image.save(fp="banner.jpg")
 
