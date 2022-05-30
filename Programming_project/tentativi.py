@@ -4,6 +4,7 @@ import IPython.display as ipd
 from googletrans import Translator 
 translator=Translator()
 import speech_recognition as sr
+from textblob import TextBlob
 from annotated_text import annotated_text
 
 urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_prog_py.jpg"
@@ -29,7 +30,6 @@ if audio_file is not None:
          st.write( recognised_text)
          
         #Check-spelling
-         from textblob import TextBlob
          new_doc = TextBlob(recognised_text)
          st.write(new_doc.tags)
          st.write('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
