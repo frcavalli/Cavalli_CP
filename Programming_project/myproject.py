@@ -5,12 +5,11 @@ from googletrans import Translator
 translator=Translator()
 import speech_recognition as sr
 
-urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg"
-st.image(urlfoto)
-
 
 #title
 st.header("Audio file translator")
+urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg"
+st.image(urlfoto)
 st.write('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you. The application is designed for European students trying to translate audio files into another language for study purposes, but can also be useful for tourists and people with other purposes.')
     
 #uploadfile 
