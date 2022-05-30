@@ -34,6 +34,7 @@ if audio_file is not None:
          result = str(new_doc.correct())
          st.write(result)
 
+         st.markdown("""---""")
         #Translator
 
          lang = st.selectbox('Choose the language in which you want to translate your text in the box below: ', ('Italian', 'Spanish', 'German', 'Croatian', 'French', 'English'))
