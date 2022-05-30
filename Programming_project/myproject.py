@@ -72,9 +72,7 @@ if audio_file is not None:
     st.markdown("""---""")
     st.write("Credits:")
     st.write("""
-    - For the picture: https://r.search.yahoo.com/_ylt=AwrEoaa3x5RiU7gAAfgdDQx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzkyMTU1ZGEzYTc
-    0MWFmNzE5Y2EyMjE5NjYxYTA4Y2I3BGdwb3MDNgRpdANiaW5n/RV=2/RE=1653946423/RO=11/RU=https%3a%2f%2fwww.
-    diarioaveiro.pt%2fnoticia%2f24172/RK=2/RS=ZhkcC1PUMFlvopCTwoBkqSgjd8E-
+    - For the picture: https://r.search.yahoo.com/_ylt=AwrEoaa3x5RiU7gAAfgdDQx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzkyMTU1ZGEzYTc0MWFmNzE5Y2EyMjE5NjYxYTA4Y2I3BGdwb3MDNgRpdANiaW5n/RV=2/RE=1653946423/RO=11/RU=https%3a%2f%2fwww.diarioaveiro.pt%2fnoticia%2f24172/RK=2/RS=ZhkcC1PUMFlvopCTwoBkqSgjd8E-
     """)
     st.write("""
     - For the trascription: https://docs.streamlit.io/library/api-reference/widgets/st.download_button-
