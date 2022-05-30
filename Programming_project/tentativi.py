@@ -4,6 +4,7 @@ import IPython.display as ipd
 from googletrans import Translator 
 translator=Translator()
 import speech_recognition as sr
+from annotated_text import annotated_text
 
 urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_prog_py.jpg"
 st.image(urlfoto)
@@ -35,7 +36,6 @@ if audio_file is not None:
          st.write(result)
             
         #Annotated_text
-         from annotated_text import annotated_text
          ann_text = annotated_text(result)
 
         #Translator
