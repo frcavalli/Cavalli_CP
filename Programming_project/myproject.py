@@ -10,14 +10,15 @@ import speech_recognition as sr
 st.header("Audio file translator")
 urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg"
 st.image(urlfoto)
-st.write('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you. The application is designed for European students trying to translate audio files into another language for study purposes, but can also be useful for tourists and people with other purposes.')
+st.caption('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you. The application is designed for European students trying to translate audio files into another language for study purposes, but can also be useful for tourists and people with other purposes.')
     
 #uploadfile 
 r = sr.Recognizer()
 audio_file = st.file_uploader("Upload your audio file here")
 if audio_file is not None: 
     st.audio(audio_file, format="audio/wav")
-    
+ 
+st.info("Please wait. The audio transcription may take a couple of minutes!")
  #Speech recognition
     with sr.AudioFile(audio_file) as source:
          audio = r.record(source)  
