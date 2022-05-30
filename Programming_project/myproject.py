@@ -24,14 +24,14 @@ if audio_file is not None:
          audio = r.record(source)  
         
          recognised_text= r.recognize_google(audio)
-         st.markdown('The text recognized from the audio seems to be: ')
+         st.subheader('The text recognized from the audio seems to be: ')
          st.write( recognised_text)
             
          st.markdown("""---""")
         #Check-spelling
          from textblob import TextBlob
          new_doc = TextBlob(recognised_text)
-         st.write('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
+         st.subheader('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
          result = str(new_doc.correct())
          st.write(result)
 
