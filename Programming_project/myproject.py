@@ -23,7 +23,7 @@ if audio_file is not None:
          audio = r.record(source)  
         
          recognised_text= r.recognize_google(audio)
-         st.markdown('**The text recognized from the audio seems to be: **')
+         st.markdown("**The text recognized from the audio seems to be: **")
          st.write( recognised_text)
          
         #Check-spelling
