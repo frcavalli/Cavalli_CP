@@ -31,7 +31,8 @@ if audio_file is not None:
         #Check-spelling
          from textblob import TextBlob
          new_doc = TextBlob(recognised_text)
-         st.subheader('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
+         st.subheader("Correction of the text")
+         st.caption('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
          result = str(new_doc.correct())
          st.write(result)
 
