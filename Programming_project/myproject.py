@@ -8,10 +8,15 @@ import speech_recognition as sr
 
 #title
 st.header("Audio file translator")
-urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg"
-res_pic= urlfoto.resize((500),(250))
 
-st.image(res_pic)
+from PIL import Image 
+image= Image.open("path/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg")
+image= image.resize((500,250).Image.ANTIALIAS)
+image.save(fp="banner.jpg")
+
+#urlfoto= "https://raw.githubusercontent.com/frcavalli/Cavalli_CP/main/Programming_project/immagine_progetto.jpg"
+
+#st.image(urlfoto)
 
 st.caption('This application serves to translate an audio file into another language. Enter an audio file from your device in the box below and the application will translate it for you. The application is designed for English students trying to translate audio files into another language for study purposes, but can also be useful for tourists and people with other purposes.')
     
