@@ -33,6 +33,10 @@ if audio_file is not None:
          st.write('I used a program to correct any errors in the transcription of the file. The corrected text looks like this: ')
          result = str(new_doc.correct())
          st.write(result)
+            
+        #Annotated_text
+         from annotated_text import annotated_text
+         ann_text = annotated_text(result)
 
         #Translator
 
