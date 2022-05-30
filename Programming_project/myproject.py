@@ -62,3 +62,15 @@ if audio_file is not None:
     st.write('Here is the audio of your translated text:')
 
     st.audio(data=my_audio, format="audio/mp3", start_time=0)
+    
+    
+st.markdown("""---""")
+
+st.write("Credits:")
+st.write("""
+- For the picture: https://r.search.yahoo.com/_ylt=AwrEoaa3x5RiU7gAAfgdDQx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzkyMTU1ZGEzYTc0MWFmNzE5Y2EyMjE5NjYxYTA4Y2I3BGdwb3MDNgRpdANiaW5n/RV=2/RE=1653946423/RO=11/RU=https%3a%2f%2fwww.diarioaveiro.pt%2fnoticia%2f24172/RK=2/RS=ZhkcC1PUMFlvopCTwoBkqSgjd8E-
+""")
+st.write("""- For the audio file: Performer: Muriel Nguyen Xuan and Stéphane MagnenatComposer: Frédéric Chopin, License: Creative Commons Attribution-Share Alike 4.0 International, 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license. https://creativecommons.org/licenses/by-sa/4.0/, URL: https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg
+""")
+st.write("""- For the tutorial: https://web.microsoftstream.com/?auth_upn=FrCavalli@unibz.it
+""")
