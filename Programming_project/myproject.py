@@ -18,7 +18,7 @@ audio_file = st.file_uploader("Upload your audio file here")
 if audio_file is not None: 
     st.audio(audio_file, format="audio/wav")
  
-st.info("Please wait. The audio transcription may take a couple of minutes!")
+    st.info("Please wait. The audio transcription may take a couple of minutes!")
  #Speech recognition
     with sr.AudioFile(audio_file) as source:
          audio = r.record(source)  
