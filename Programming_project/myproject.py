@@ -80,4 +80,7 @@ if audio_file is not None:
     st.write("""
     - For the correction of the transcription, Textblob: https://towardsdatascience.com/textblob-spelling-correction-46321fc7f8b8-
     """)
+    st.write("""
+    - For the Audio-file: https://www.youtube.com/watch?v=TA2x8_4QNEs&t=25s-
+    """)
     
